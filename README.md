@@ -1,45 +1,35 @@
-⚙️ Estrutura do Repositório
+## 🧩 Exercícios de Lógica de Programação em JavaScript
 
-Seu repositório deve seguir a estrutura padrão de projetos Java:
-Plaintext
+### Exercício 1 – Estruturas Condicionais (`exercicio1.js`)
+**Objetivo:** Praticar `if`, `else if` e `else`.
 
-avaliacao-logica-java-seu-nome/
-│
-├── src/
-│   ├── Exercicio1.java
-│   ├── Exercicio2.java
-│   ├── Exercicio3.java
-│   ├── Exercicio4.java
-│   └── Exercicio5TodoList.java
-└── README.md
+Crie variáveis para armazenar o **nome do aluno**, **nota 1**, **nota 2** e **frequência** (em porcentagem, de 0 a 100).
 
-    💡 Cada arquivo .java possui um método main e corresponde a um exercício, devendo ser commitado separadamente no GitHub.
+- Calcule a média das duas notas.
+- O aluno será **Aprovado** se a média for maior ou igual a `7.0` **E** a frequência for maior ou igual a `75%`.
+- O aluno estará de **Recuperação** se a média for entre `5.0` e `6.9` **E** a frequência for maior ou igual a `75%`.
+- O aluno será **Reprovado** se a média for menor que `5.0` **OU** a frequência for menor que `75%`.
+- Exiba no console o nome do aluno, a média calculada, a frequência e o status final (*"Aprovado"*, *"Recuperação"* ou *"Reprovado"*).
 
-🧩 Exercícios
-Exercício 1 – Entrada, Processamento e Saída (Exercicio1.java)
+---
 
-Crie um programa que:
+### Exercício 2 – Laço `for` Simples (`exercicio2.js`)
+**Objetivo:** Praticar repetição com contador e acumulador.
 
-    Peça ao usuário nome (String), idade (int) e nota média (double).
+Crie uma variável chamada `numeroBase` (ex: `7`).
 
-    Calcule:
+- Utilize um laço `for` para imprimir a tabuada desse número de 1 a 10 no seguinte formato: `7 x 1 = 7`.
+- Além de imprimir a tabuada, utilize uma variável acumuladora para calcular e exibir a **soma de todos os resultados** da tabuada ao final.
 
-        Daqui a quantos anos o usuário terá 100 anos.
+---
 
-        Se a nota média é acima da média da turma (>= 7.0) ou não.
+### Exercício 3 – Laço com Condicionais e Operador Módulo (`exercicio3.js`)
+**Objetivo:** Praticar laços de repetição combinados com checagem de paridade (`%`).
 
-    Exiba uma mensagem formatada no console com todas as informações.
+Crie duas variáveis: `inicio` (ex: `1`) e `fim` (ex: `20`).
 
-Exercício 2 – Arrays e Laços de Repetição (Exercicio2.java)
-
-Crie um programa que:
-
-    Leia 5 números inteiros do teclado e armazene-os em um array (int[]).
-
-    Exiba:
-
-        O maior, o menor e a média dos valores.
-
-        O array ordenado em ordem crescente e decrescente (dica: utilize a classe Arrays).
-
-    Peça um número ao usuário e informe se ele está no array e em qual posição (índice).
+- Utilize um laço `for` para percorrer todos os números desse intervalo (inclusive o início e o fim).
+- Para cada número, verifique:
+  - Se for **par**, exiba: `O número X é PAR`.
+  - Se for **ímpar**, exiba: `O número X é ÍMPAR`.
+- Contabilize quantos números pares e quantos números ímpares existem no intervalo e exiba o total de cada um no final.
